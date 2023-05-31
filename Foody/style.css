@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --cor0:#00FF75;
+  --cor1:#12274F;
+  --text-color:#fff;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--cor1);
+}
+
+/*================== HEADER =========================== */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: 0px 0px 5px #0d1d3b;
+}
+
+.menu-list {
+  display: flex;
+  gap: 3rem;
+}
+
+.menu-list a {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  background-color: var(--cor1);
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  outline: none; 
+  color: var(--text-color);
+}
+
+.search-bar input::placeholder {
+  color: var(--text-color);
+  text-align: center;
+}
+
+.search-bar i {
+  color: var(--text-color);
+  font-size: 1.3rem;
+}
+
+/*================== MAIN =========================== */
+
+main {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  transition: all 1s;
+}
+
+.text-container {
+  display: flex;
+  height: 20rem;
+  width: 22.5rem;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--text-color);
+  background-image: url(img/line.svg);
+  background-size: 100%;
+  background-position: left center;
+}
+
+.text-container h2 {
+  font-size: 3.5rem;
+}
+
+.text-container h2 span{
+  font-size: 6rem;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container button {
+  width: 13rem;
+  height: 6.25rem;
+  border-radius: 50px;
+  background-color: var(--cor0);
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+
+
+
+/*================== Footer =========================== */
+
+footer {
+  width: 100vw;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer .social {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: var(--text-color);
+  padding: 10px;
+}
+
+footer p a {
+  color: var(--cor0);
+}

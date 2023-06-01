@@ -73,7 +73,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 6rem;
-  transition: all 1s;
+  transition: all 1.5s;
 }
 
 .text-container {
@@ -109,7 +109,7 @@ main {
   font-size: 1.6rem;
   font-weight: 600;
   padding: 1rem;
-  color: var(--text-color);
+  color: var(--cor1);
   cursor: pointer;
 }
 
@@ -143,4 +143,27 @@ footer p {
 
 footer p a {
   color: var(--cor0);
+}
+
+/*================== Responsive =========================== */
+
+@media (max-width: 960px) {
+
+  header {
+    margin-bottom: 5rem;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    margin: auto;
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
+  .burguer-image img{
+    width: 18rem;
+  }
+
+  footer {
+    position: relative;
+  }
 }

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --bg-color-1: #000;
+  --text-color-1: #fff;
+  --primary-color: #9BA4ED;
+  --secundary-color: #292828;
+
+  font-size: 62,5%;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  background-image: linear-gradient(45deg, var(--bg-color-1), var(--secundary-color));
+  background-attachment: fixed;
+
+  color: var(--text-color-1);
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button,
+a {
+  color: var(--text-color-1);
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  width: 8rem;
+  height: 2.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-weight: 300;
+}
+
+button:hover {
+  transition: 0.6s;
+  border: 1px solid var(--text-color-1);
+  color: var(--primary-color);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.2rem;
+  padding:0rem 9.3rem 0rem 9.3rem;
+}
+
+header nav {
+  display: flex;
+  gap: 4rem;
+}
+
+header nav a:hover {
+  transition: 0.6s;
+  color: var(--primary-color);
+}
+
+.main-container {
+  display: flex;
+  padding: 9.3rem;
+  gap: 3.3rem;
+  transition: all 1.6s;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.text-container h2 {
+  font-size: 4.8rem;
+}
+
+.text-container span{
+  color: var(--primary-color);
+}
+
+.text-container p{
+  font-size: 1.4rem;
+}
+
+.icons-container-1{
+  width: 103.4rem;
+  height: 22.7rem;
+  padding: 10rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4.2rem;
+  background-color: #00000071;
+  border-radius: 2.5rem;
+  border: 2px solid;
+  border-image: linear-gradient(45deg var(--text-color-1)50%, var(--primary-color));
+}
+
+.icons-container-2 {
+  height: 20rem;
+  width: 20rem;
+  padding: 2rem;
+  background-color: var(--secundary-color);
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.6rem;
+}
+
+.icons-container-2 img {
+  width: 4rem;
+}
+
+footer {
+  color: var(--text-color-1);
+  font-weight: 300;
+  text-align: center;
+  padding: 3rem;
+}
+
+footer a {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
